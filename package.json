@@ -12,10 +12,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "husky install",
-    "test":""
+    "test": ""
   },
   "dependencies": {
     "pinia": "^2.0.32",
+    "vant": "^4.1.2",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
