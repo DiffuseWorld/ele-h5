@@ -7,7 +7,7 @@ import router from './router'
 import './assets/main.css'
 
 const app = createApp(App)
-// 草拟吗
+// 测试一下
 app.use(createPinia())
 app.use(router)
 
