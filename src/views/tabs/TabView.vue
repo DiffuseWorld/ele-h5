@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {Tabbar,TabbarItem} from 'vant'
+// import {Tabbar,TabbarItem} from 'vant'
 import {ref} from 'vue'
 import {useRouter} from 'vue-router'
 
@@ -16,11 +16,12 @@ const tiohzuan=()=>{
 
 <template>
     <RouterView/>
-    <Tabbar v-model="active" @change="tiohzuan">
-        <TabbarItem name="home" icon="home-o">主页</TabbarItem>
-        <TabbarItem name="order" icon="bars">订单</TabbarItem>
-        <TabbarItem name="me" icon="contact">我的</TabbarItem>
-    </Tabbar>
+    
+    <VanTabbar v-model="active" @change="tiohzuan">
+        <VanTabbarItem name="home" icon="home-o">主页</VanTabbarItem>
+        <VanTabbarItem name="order" icon="bars">订单</VanTabbarItem>
+        <VanTabbarItem name="me" icon="contact">我的</VanTabbarItem>
+    </VanTabbar>
 </template>
 
 <style>

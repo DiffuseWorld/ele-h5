@@ -8,8 +8,23 @@ import 'vant/lib/index.css'
 // import './assets/main.css'
 
 const app = createApp(App)
-// 测试一下
+
+
+
 app.use(createPinia())
 app.use(route)
+
+
+const resize = () => {
+    const rootValue = 16
+    const rootWidth = 390
+    const driviceWidth = document.documentElement.clientWidth
+    document.documentElement.style.fontSize = (driviceWidth * rootValue) / rootWidth + 'px'
+}
+
+resize()
+
+window.onresize=resize
+
 
 app.mount('#app')
