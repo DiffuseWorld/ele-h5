@@ -8,7 +8,7 @@ fetchTest().then(data=>console.log(data))
   <TabsView/>
 </template>
 
-<style scoped>
+<style>
 @import 'normalize.css';
 #app{
   /**
